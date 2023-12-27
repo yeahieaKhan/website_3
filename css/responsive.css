@@ -1,0 +1,55 @@
+@media (max-width:991px){
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+    .mClick {
+        margin-top:  30px;
+        margin-left: 100px;
+    }
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    .navBar ul li a:hover::after{
+        width: 0;
+    }
+    
+    .menu-icon{
+        display: block;
+        float: right;
+        
+    }
+    .menuColor{
+        position:relative;
+    }
+    .navBar ul {
+        position: absolute;
+        top: 100%;  
+        background-color: gray;
+        left: -100%;
+        width: 100%;
+        transition: .5s; 
+        z-index: 9;
+        text-align: left;
+        display: block !important;
+    }
+    /* .navBar ul{
+        display: block !important;
+    } */
+    .navBarOpen{
+        left: 0% !important; 
+    }
+
+
+
+
+}
